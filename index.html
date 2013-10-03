@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<title>Boyd's Used Motors</title>
+		<script type="text/javascript" src="script.js"></script>
+		
+		<script>
+			function startTimer() {
+				var coloursArray = new Array('green', 'blue', 'yellow', 'orange');
+				
+				// I don't think we want this any more, it is making some customers blind
+				// Just delete the colour doo dah
+				randomBackgroundColour(coloursArray);
+			}
+		</script>
+	</head>
+	
+	<body onload="startTimer()" style="background-color: #FFFFCC;">
+		<div style="width: 900px; margin: 0 auto">
+			
+			
+								<br/>
+			
+			
+			<hr color="red" />
+				<center>
+					<img src="img/banner-left.png" style="float: left; width: 200px">
+					<font style="font-size: 46px; color: red;">Boyd's Used Motors</font>
+					<img src="img/banner-right.png" style="float: right; width: 200px">
+				</center>
+					
+					
+			<br/>
+			<!-- the special message of the day (motd) -->
+			<center><font id="motd" style="font-size: 20px; color: blue;">A name you can surely trust!</font></center><br/>
+			<hr color="red" /><br/>
+			      <br/>
+			
+			<div style="float: right; width: 350px">
+				<img src="img/sales-boyd.png" width="100%">
+				Our trustworthy staff, sales lad Boyd!<br/>
+				<hr color="red" />	
+				<img src='img/car-blue.png' id="car" height="256px" /><br/>
+				<a onclick="changeCar()" href="#">Click here to change car!</a>
+				<hr color="red" />	
+			</div>
+			
+			<div>
+				Welcome to Boyd's Used Motors!!! We have some of the finest cars with only minor problems.<br/><br/>
+	
+				We have been voted best car company in the UK by our employees 8 years running. Boyd's Used Motors has been running for over 13 years selling reliable used cars to the first person to walk in the door.<br/><br/>
+	
+				We saw you coming and made a special price just for you! That’s the quality service you can expect from our friendly staff.<br/><br/>
+	
+				<br/><br/><br/><br/><br/><br/><br/><br/>
+				
+				
+				
+				<br/>
+				
+				<hr/>
+				<font style="font-size: 24px">Find the trade-in price of your car</font>
+				<form id="calculate_car_price" action="">
+					Purchase price: <input type="text" name="carPurchasePrice" value=""><br>
+					
+					Age 
+					<select name="carAge">
+						<option value="1">1 year</option>
+						<option value="2">2 years</option>
+						<option value="3 years">3 years</option>
+						<option value="4 years">4 years</option>
+						<option value="5">5 years</option>
+						<option value="6">6 years</option>
+						<option value="7">7 years</option>
+						<option value="8">8 or more</option>
+					</select>
+					<br/>
+					
+					<input type="submit" value="Calculate the price!" onClick="calculateCarValue(this.form)">
+				</form>
+
+				
+				<hr/>
+				
+				
+				<div id="iNeedSomeMoney">
+					<font style="font-size: 24px">Need to borrow some money to buy that dream hot rod?</font>
+					
+					How much to borrow? <input type="text" id="borrowValue" name="borrowValue" value=""><br>
+					
+					For how long? 
+					<select id="borrowTime" name="borrowTime">
+						<option value="1">1 month</option>
+						<option value="12">1 year</option>
+						<option value="24">2 years</option>
+						<option value="60">5 years</option>
+						<option value="120">10 years</option>
+						<option value="240">20 years</option>
+						<option value="1200">My lifetime</option>
+					</select>
+					<br/>
+					
+					<input type="submit" value="Calculate your loan" onClick="calculateLoan()">
+					<br/><br/>
+					<span id="borrowTotalMonthly" style="display: none; font-size: 24px; color: red;"></span><br/>
+					<span class="borrowTotal" style="display: none; font-size: 24px; color: red;"></span>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			<div></div>
+			
+			
+			
+			<!-- this is where I wanted to add a picture of our amazing new cars -->
+			<!--
+			<div><div>
+			
+					<h2>Amazing new Stock!</h2><br/>
+					
+					<img src=""/>
+					Call today to grab a bargin!!
+			
+			
+			             <br/>
+							
+					</div>
+							</div>-->
+			
+			
+			
+			
+			   <br/><br/><br/>   <br/>              <br/><br/>
+			
+			<div id="footer" class="footer">
+				<font style="font-size: 10px">Designed by Boyd's Artistic Design Company</font>
+			</div>
+			
+			<br/>
+			<br/><br/>
+		</div>
+	</body>
+</html>
